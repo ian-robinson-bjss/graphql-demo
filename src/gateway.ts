@@ -55,30 +55,6 @@ export const gatewayApp = createYoga({
   schema: makeGatewaySchema(),
   maskedErrors: false,
   graphiql: {
-    title: 'Stitching directives SDL',
-    defaultQuery: /* GraphQL */ `
-      query {
-        products(upcs: [1, 2]) {
-          name
-          price
-          weight
-          inStock
-          shippingEstimate
-          reviews {
-            id
-            body
-            author {
-              name
-              username
-              totalReviews
-            }
-            product {
-              name
-              price
-            }
-          }
-        }
-      }
-    `,
+    title: 'Stitching directives SDL'
   },
 });
